@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Tutorial &mdash; UPY v0.9.2 documentation</title>
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.9.2',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="UPY v0.9.2 documentation" href="../index.html" />
+    <link rel="up" title="Getting started" href="index.html" />
+    <link rel="next" title="Release notes" href="../releases/index.html" />
+    <link rel="prev" title="Getting started" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="../releases/index.html" title="Release notes"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Getting started"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">UPY v0.9.2 documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Getting started</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="tutorial">
+<h1>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="starting-a-project">
+<h2>1.Starting a Project<a class="headerlink" href="#starting-a-project" title="Permalink to this headline">¶</a></h2>
+<p>To start a upy project you need to start a normal django project and replace the file you find in upy/bin/upy_project_set in the root.
+You will overwrite:
+* __init__.py
+* manage.py
+* settings.py
+* urls.py</p>
+<p>and copy:
+* config.py
+* django_wsgi.py
+* upstream_errorpage.html
+* upython.py
+* uwsgi.ini</p>
+<p>Otherwise, if you want upy do all this boring stuff, just go in the upy/bin directory and in the command line type:</p>
+<div class="highlight-python"><pre>root:~/yourhome/upy/bin$ upy.py</pre>
+</div>
+<p>and follow the instructions. It will set the projects as required and if needed, it will create the virtualenv for your project and so on.</p>
+</div>
+<div class="section" id="config-and-settings">
+<h2>2.Config and Settings<a class="headerlink" href="#config-and-settings" title="Permalink to this headline">¶</a></h2>
+<p>The <em>only</em> configuration file you will change is <tt class="docutils literal"><span class="pre">config.py</span></tt>.
+You can set there the normal django settings like database, installed_apps, template dir, and set all the variables to initialize the upy apps you need.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You should set the <em>USE_APP</em> to True just if you want the ready-to-use application on your admin. If you just need to inherit the model/admin or use other functions you only have to import the right module.</p>
+</div>
+</div>
+<div class="section" id="deploying">
+<h2>3.Deploying<a class="headerlink" href="#deploying" title="Permalink to this headline">¶</a></h2>
+<p>TODO</p>
+</div>
+<div class="section" id="cotrib-tree">
+<h2>4.Cotrib.tree<a class="headerlink" href="#cotrib-tree" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<p>4.1 Models</p>
+<p>TODO</p>
+<p>4.2 Admin</p>
+<p>TODO</p>
+<p>4.3 Views</p>
+<p>TODO</p>
+<p>4.4 Template</p>
+<p>TODO</p>
+</blockquote>
+</div>
+<div class="section" id="cotrib-g11n">
+<h2>5.Cotrib.G11n<a class="headerlink" href="#cotrib-g11n" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<p>4.1 Models</p>
+<p>TODO</p>
+<p>4.2 Admin</p>
+<p>TODO</p>
+<p>4.3 Views</p>
+<p>TODO</p>
+<p>4.4 Template</p>
+<p>TODO</p>
+</blockquote>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="#">Tutorial</a><ul>
+<li><a class="reference external" href="#starting-a-project">1.Starting a Project</a></li>
+<li><a class="reference external" href="#config-and-settings">2.Config and Settings</a></li>
+<li><a class="reference external" href="#deploying">3.Deploying</a></li>
+<li><a class="reference external" href="#cotrib-tree">4.Cotrib.tree</a></li>
+<li><a class="reference external" href="#cotrib-g11n">5.Cotrib.G11n</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="index.html"
+                                  title="previous chapter">Getting started</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="../releases/index.html"
+                                  title="next chapter">Release notes</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../_sources/intro/tutorial.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Quick search</h3>
+              <form class="search" action="../search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Go" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Enter search terms or a module, class or function name.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../releases/index.html" title="Release notes"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Getting started"
+             >previous</a> |</li>
+        <li><a href="../index.html">UPY v0.9.2 documentation</a> &raquo;</li>
+          <li><a href="index.html" >Getting started</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2012, UPCODE.it.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.4.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Getting started &mdash; UPY v0.9.2 documentation</title>
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.9.2',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="UPY v0.9.2 documentation" href="../index.html" />
+    <link rel="next" title="Tutorial" href="tutorial.html" />
+    <link rel="prev" title="Welcome to UPY’s documentation!" href="../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="tutorial.html" title="Tutorial"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Welcome to UPY’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">UPY v0.9.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="getting-started">
+<h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p>This is the UPY tutorial.</p>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p><strong>UPY</strong> is intedeed to simplify the development of (web) applications with three different approaches. It provides:</p>
+<ul class="simple">
+<li>a list of ready-to-use contrib apps to install and enjoy with no code scripting, like &#8216;image&#8217;, &#8216;newsletter&#8217;, &#8216;ckeditor&#8217;;</li>
+<li>a list of contrib apps to use like a mini-framework to use in your models, admin or views to automate operations. For example the &#8216;language&#8217; contrib gives you an admin to manage the languages, a model and admin to inherit for multilanguage support, a form to initialize in your views to easily get an html rendered object to use in your template with a select, links or flags.</li>
+<li>some usefull utility out of the contrib apps, like fields.CountryField to use in the admin, the uwsgidecorators to let you communicate with uwsgi application server etc.</li>
+</ul>
+<dl class="docutils">
+<dt>We assume that you will already <em>perfectly</em> know the <strong>Django Framework</strong> and <strong>Python language</strong>. If you don&#8217;t, here are all the refences you need:</dt>
+<dd><ul class="first last simple">
+<li><strong>Python</strong>: <a class="reference external" href="http://docs.python.org/tutorial/">Official Python tutorial</a></li>
+<li><strong>Python</strong>: <a class="reference external" href="http://diveintopython.net/">Dive into Python</a></li>
+<li><strong>Django</strong>: <a class="reference external" href="http://docs.djangoproject.com/">Official Django documentation</a></li>
+</ul>
+</dd>
+</dl>
+<p>Those resources will be excellent reading material if you are not familiar
+with Python or Django. The Django tutorial is especially important as many
+core Pinax concepts are simply ones you find in Django.</p>
+</div>
+<div class="section" id="install">
+<h2>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h2>
+<p>Prerequisites for the last stable release:</p>
+<ul>
+<li><p class="first">python 2.6</p>
+</li>
+<li><p class="first">django 1.4:</p>
+<div class="highlight-python"><pre>pip install django</pre>
+</div>
+</li>
+<li><p class="first">django-mptt and django-imagekit (with PIL library) are required respectively for the tree and image contrib:</p>
+<div class="highlight-python"><pre>pip install django-mptt django-imagekit</pre>
+</div>
+<p>but the upy.py scripts will give you an easy way to install everything you need in your <a class="reference external" href="http://www.virtualenv.org/en/latest/index.html">virtualenv</a></p>
+</li>
+</ul>
+<p>Last but not least, install upy <strong>(TODO)</strong>:</p>
+<div class="highlight-python"><pre>pip install django-upy</pre>
+</div>
+<p>or get it from our repository: <a class="reference external" href="http://upyproject.com">http://upyproject.com</a></p>
+</div>
+<div class="section" id="tutorial">
+<h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="tutorial.html">Tutorial</a><ul>
+<li class="toctree-l2"><a class="reference external" href="tutorial.html#starting-a-project">1.Starting a Project</a></li>
+<li class="toctree-l2"><a class="reference external" href="tutorial.html#config-and-settings">2.Config and Settings</a></li>
+<li class="toctree-l2"><a class="reference external" href="tutorial.html#deploying">3.Deploying</a></li>
+<li class="toctree-l2"><a class="reference external" href="tutorial.html#cotrib-tree">4.Cotrib.tree</a></li>
+<li class="toctree-l2"><a class="reference external" href="tutorial.html#cotrib-g11n">5.Cotrib.G11n</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="#">Getting started</a><ul>
+<li><a class="reference external" href="#overview">Overview</a></li>
+<li><a class="reference external" href="#install">Install</a></li>
+<li><a class="reference external" href="#tutorial">Tutorial</a><ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="../index.html"
+                                  title="previous chapter">Welcome to UPY&#8217;s documentation!</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="tutorial.html"
+                                  title="next chapter">Tutorial</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../_sources/intro/index.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Quick search</h3>
+              <form class="search" action="../search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Go" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Enter search terms or a module, class or function name.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="tutorial.html" title="Tutorial"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Welcome to UPY’s documentation!"
+             >previous</a> |</li>
+        <li><a href="../index.html">UPY v0.9.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2012, UPCODE.it.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.4.
+    </div>
+  </body>
+</html>
