@@ -35,7 +35,7 @@ Install
 
 Prerequisites for the last stable release:
 
-- python 2.6
+- python 2.7
 - django 1.4::
     
     pip install django
@@ -50,7 +50,7 @@ Prerequisites for the last stable release:
 
 Last but not least, install upy **(TODO)**::
 
-    pip install django-upy
+    pip install upy
     
 or get it from our repository: http://upyproject.com
 
